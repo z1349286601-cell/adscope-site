@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>__COMPANY_NAME__ — Public Advertising Research</title>
+<meta name="description" content="__COMPANY_NAME__ builds tools that help e-commerce teams study publicly available advertising data.">
+<style>
+  :root{
+    --ink:#141b26; --body:#3d4a5c; --muted:#6b7a8f;
+    --line:#e3e8ef; --bg:#ffffff; --soft:#f6f8fb;
+    --accent:#1f5fd0;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--bg); color:var(--body);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size:16px; line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:960px; margin:0 auto; padding:0 28px;}
+  header{border-bottom:1px solid var(--line);}
+  .nav{display:flex; align-items:center; justify-content:space-between; height:72px;}
+  .brand{font-size:19px; font-weight:700; color:var(--ink); letter-spacing:-0.2px; text-decoration:none;}
+  .nav-links a{
+    color:var(--body); text-decoration:none; font-size:15px; margin-left:28px;
+  }
+  .nav-links a:hover{color:var(--accent);}
+  .hero{padding:88px 0 72px; border-bottom:1px solid var(--line);}
+  .eyebrow{
+    font-size:13px; font-weight:600; letter-spacing:1.4px; text-transform:uppercase;
+    color:var(--accent); margin:0 0 18px;
+  }
+  h1{
+    font-size:42px; line-height:1.25; margin:0 0 22px; color:var(--ink);
+    font-weight:700; letter-spacing:-0.8px; max-width:760px;
+  }
+  .lead{font-size:19px; color:var(--body); max-width:700px; margin:0;}
+  section{padding:64px 0; border-bottom:1px solid var(--line);}
+  h2{font-size:26px; color:var(--ink); margin:0 0 14px; font-weight:700; letter-spacing:-0.3px;}
+  h3{font-size:17px; color:var(--ink); margin:0 0 10px; font-weight:600;}
+  p{margin:0 0 16px;}
+  .grid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-top:32px;}
+  .card{
+    background:var(--soft); border:1px solid var(--line); border-radius:10px; padding:26px 24px;
+  }
+  .card p{margin:0; font-size:15px; color:var(--body);}
+  .note{
+    background:var(--soft); border-left:3px solid var(--accent); border-radius:4px;
+    padding:22px 26px; margin-top:8px;
+  }
+  .note p:last-child{margin-bottom:0;}
+  dl{margin:0; display:grid; grid-template-columns:200px 1fr; gap:14px 28px; font-size:15px;}
+  dt{color:var(--muted);}
+  dd{margin:0; color:var(--ink);}
+  a{color:var(--accent);}
+  footer{padding:40px 0 56px; font-size:14px; color:var(--muted);}
+  .foot-links{margin-bottom:14px;}
+  .foot-links a{
+    color:var(--ink); text-decoration:none; font-weight:600; margin-right:26px;
+  }
+  .foot-links a:hover{color:var(--accent); text-decoration:underline;}
+  @media (max-width:760px){
+    .grid{grid-template-columns:1fr;}
+    h1{font-size:31px;} .hero{padding:56px 0 48px;} section{padding:48px 0;}
+    dl{grid-template-columns:1fr; gap:6px 0;}
+    dt{margin-top:12px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">__COMPANY_NAME__</a>
+    <nav class="nav-links">
+      <a href="index.html#product">Product</a>
+      <a href="index.html#data">Data &amp; Compliance</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Public Advertising Research</p>
+    <h1>Structured access to publicly available advertising data for e-commerce teams.</h1>
+    <p class="lead">
+      __COMPANY_NAME__ builds research software that organises publicly disclosed advertising
+      information by product category and market, so that teams can study how products are
+      presented to consumers in Europe.
+    </p>
+  </div>
+</div>
+
+<section id="product">
+  <div class="wrap">
+    <h2>What the product does</h2>
+    <p>
+      Advertising transparency archives publish a large volume of information, but they are designed
+      for individual searches rather than for systematic study. Our software collects this public
+      information on a scheduled basis and presents it in a form that a business team can review.
+    </p>
+    <div class="grid">
+      <div class="card">
+        <h3>Category views</h3>
+        <p>Public advertisements are grouped into product categories such as apparel, beauty and kitchenware, using a maintained keyword set.</p>
+      </div>
+      <div class="card">
+        <h3>Creative comparison</h3>
+        <p>Teams can compare how different advertisers present similar products, using the creative material and copy that platforms publish.</p>
+      </div>
+      <div class="card">
+        <h3>Market coverage</h3>
+        <p>Results are organised by market, with Germany and the United Kingdom as the initial coverage areas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="data">
+  <div class="wrap">
+    <h2>Where the data comes from</h2>
+    <p>
+      All information presented by our software is advertising data that platforms are legally
+      required to make publicly available under transparency regulation, together with data
+      returned by official platform interfaces.
+    </p>
+    <div class="note">
+      <p><strong>We do not collect personal data about advertising audiences.</strong>
+      Our software does not build individual profiles, does not use tracking pixels, and does not
+      attempt to identify any person who has seen an advertisement. Audience information is used
+      only in the aggregated form that platforms themselves publish.</p>
+      <p><strong>We use official interfaces where they exist.</strong>
+      Where a platform provides an authorised programming interface for public advertising data,
+      we use that interface under the terms of an approved access agreement. Where no such
+      interface exists, we study only content that is publicly accessible without authentication.</p>
+    </div>
+  </div>
+</section>
+
+<section id="who">
+  <div class="wrap">
+    <h2>Who uses it</h2>
+    <dl>
+      <dt>Primary users</dt>
+      <dd>Media buyers and product teams at cross-border e-commerce companies.</dd>
+      <dt>Typical task</dt>
+      <dd>Reviewing newly published advertisements in a category, and deciding which creative approaches are worth studying further.</dd>
+      <dt>Coverage today</dt>
+      <dd>Apparel, beauty and kitchenware categories; Germany and the United Kingdom.</dd>
+      <dt>What it is not</dt>
+      <dd>The software does not provide audience targeting, does not predict advertising performance, and does not report spend or conversion figures.</dd>
+    </dl>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <p>
+      Questions about the product, our data practices, or a research enquiry can be sent to
+      <a href="mailto:__CONTACT_EMAIL__">__CONTACT_EMAIL__</a>. We aim to respond within two
+      business days.
+    </p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+    <div>&copy; 2026 __COMPANY_NAME__. All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>
